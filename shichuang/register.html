@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/SC_index.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+		<div class="zc">
+			<img src="images/index/login-left-img.png">
+			<div class="register-right">
+				<h2>注册账号</h2>
+				<form id="register_form">
+					<input type="text" placeholder="手机号" id="ztel" name="userphone" onblur="check()"><span id="tphone"></span><br>
+					<input type="password" placeholder="密码" id="zpwd" name="userpw" onblur="check()"><span id="password"></span><br>
+					<input type="password" placeholder="确认密码" id="zspwd" name="userspwd" onblur="check()"><span id="affirm"></span><br>
+					<div class="register-yz">
+						<input type="text" placeholder="输入验证码" id="zyz" name="useryz" onblur="check()">
+						<canvas id="canvas" width="145" height="35"></canvas>
+						<span id="test"></span>
+					</div>
+					<input type="text" placeholder="输入校验码码" id="jy">
+					<input type="button" id="hq" value="获取短信校验码"><br>
+					<input type="button" value="同意协议并注册" id="zc" >
+				</form>
+			</div>
+		</div>
+		<div class="banner_bottom_dl">
+			<img src="images/index/5775fba813f8c.jpg" alt=""/>
+		</div>
+	</div>
+    <div class="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

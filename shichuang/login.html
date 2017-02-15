@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实创装饰官网</title>
+    <link rel="stylesheet" href="css/SC_index.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+		<div class="dl">
+			<img src="images/index/login-left-img.png">
+			<div class="login-right">
+				<h2>账号登录</h2>
+				<form action="">
+					<input type="text" placeholder="手机号" name="userName" id="tel" onblur="check()"><span id="dlphone"></span><br>
+					<input type="password" placeholder="密码" name="userPwd" id="pwd" onblur="check()"><span id="dlpwd"></span><br>
+					<div class="login-yz">
+						<input type="text" placeholder="输入验证码" id="yz" onblur="check()">
+						<canvas id="canvas" width="145" height="35"></canvas>
+						<span id="dlyz"></span>
+					</div>
+					<input type="checkbox">下次自动登录
+					<a href="#" id="wj">忘记密码？</a><br>
+					<div class="l-login-btn">
+						<a id="userlogin" class="yellow-btn btn-animate" href="#">登录</a>
+						<a class="yellow-btn-light btn-animate" href="register.html">注册</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="banner_bottom_dl">
+			<img src="images/index/5775fba813f8c.jpg" alt=""/>
+		</div>
+	</div>
+    <div class="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
